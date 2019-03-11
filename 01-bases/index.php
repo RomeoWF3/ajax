@@ -6,6 +6,7 @@
 </head>
 <body>
         <h1>Mon site</h1>
+        <button id='button'>Changer la phrase</button>
 
         <script>
                 // On instancie le moteur AJAX
@@ -28,6 +29,21 @@
                 // Executer une requête HTTP
                 xhr.open('GET', './worker.php');
                 xhr.send();
+
+                /**
+                 * Exercice
+                 * 1. Ecouter l'évènement au clic du bouton 
+                 * 2. A chaque clic, on éxécute une nouvelle requête AJAX sur le serveur 
+                 * pour récupérer une nouvelle phrase et modifier le contenu du h1.
+                 */
+
+                var button= document.getElementById('button');
+                 
+                 button.addEventListener('click', function(){
+                    xhr.open('GET', './worker.php');
+                    xhr.send();
+                });
+
 
                 
         
