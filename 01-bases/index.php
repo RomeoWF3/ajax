@@ -18,7 +18,7 @@
                             
                             // On récupère la réponse HTTP
                             console.log(xhr.response);
-                            document.getElementsByTagname('h1')[0].innerHTML = xhr.response;
+                            document.getElementsByTagName('h1')[0].innerHTML = xhr.response;
 
                         }
                     }
